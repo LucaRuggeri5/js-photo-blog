@@ -24,29 +24,26 @@ h1 {
 
 /* CARD */
 
-body {
+main {
     background-image: url(../img/cork.png);
 }
 
-.container {
+.card-container {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 100px;
-}
-
-.card-container {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    width: 340px;
-}
-
-.foto-card {
-    width: 300px;
+    justify-content: center;
+    width: 80%;
 }
 
 .card {
-    background-color: beige;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.foto-card {
+    width: 200px;
 }
 
 .card-date {
