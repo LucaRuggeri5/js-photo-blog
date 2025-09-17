@@ -20,6 +20,7 @@ axios.get(endPointApi)
 
             cards += `
         <div class="card">
+            <img src="img/pin.svg" id="pin" alt="PIN">
             <img src="${cardItem.url}" class=foto-card alt="IMMAGINE" />
             <div class="card-body">
                 <span class="card-text">${cardItem.date}</span>

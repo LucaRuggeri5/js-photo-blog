@@ -40,15 +40,28 @@ main {
 
 .card {
     background-color: white;
+    position: relative;
     padding: 10px;
     margin-top: 20px;
-    border: 0px solid;
+    border: 1px solid;
     box-shadow: 2px 3px;
     width: calc((100% / 3) - (40px / 3));
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: rotate(10deg) scale(1.05);
 }
 
 .foto-card {
     width: 100%;
+}
+
+#pin {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%)
 }
 
 .card-date {
