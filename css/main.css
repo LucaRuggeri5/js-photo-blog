@@ -41,6 +41,10 @@ body {
     width: 340px;
 }
 
+.foto-card {
+    width: 300px;
+}
+
 .card {
     background-color: beige;
 }
