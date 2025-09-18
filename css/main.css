@@ -46,11 +46,16 @@ main {
     border: 1px solid;
     box-shadow: 2px 3px;
     width: calc((100% / 3) - (40px / 3));
-    transition: transform 0.3s ease;
+    transition: 0.4s ease;
+    cursor: pointer;
 }
 
 .card:hover {
-    transform: rotate(10deg) scale(1.05);
+    transform: rotate(10deg) scale(1.15);
+}
+
+.card:hover #pin {
+    display: none;
 }
 
 .foto-card {
@@ -60,8 +65,8 @@ main {
 #pin {
     position: absolute;
     left: 50%;
-    top: -10px;
-    transform: translateX(-50%)
+    top: 0px;
+    transform: translate(-50%, -50%)
 }
 
 .card-date {
@@ -69,7 +74,7 @@ main {
 }
 
 .card-title {
-    font-family: "Edu TAS Beginner", cursive;
+    font-family: "Edu TAS Beginner";
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
