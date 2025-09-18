@@ -19,11 +19,11 @@ axios.get(endPointApi)
             console.log(cardItem);
 
             cards += `
-        <div class="card">
+        <div class="card" onclick="on()">
             <img src="img/pin.svg" id="pin" alt="PIN">
             <img src="${cardItem.url}" class=foto-card alt="IMMAGINE" />
             <div class="card-body">
-                <span class="card-text">${cardItem.date}</span>
+                <span class="card-date">${cardItem.date}</span>
                 <h2 class="card-title">${cardItem.title}</h2>
             </div>
         </div>
@@ -34,3 +34,13 @@ axios.get(endPointApi)
         output.innerHTML = cards;
 
     });
+
+
+// OVERLAY
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
