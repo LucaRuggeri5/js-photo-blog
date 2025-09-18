@@ -92,7 +92,7 @@ main {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 753;
     cursor: pointer;
     text-align: center;
 }
@@ -103,7 +103,13 @@ main {
     border-radius: 15%;
     font-size: 30px;
     margin-top: 20px;
+    margin-bottom: 50px;
     cursor: pointer;
+}
+
+.card-overlay {
+    width: 70vh;
+    margin: 0 auto;
 }
 
 

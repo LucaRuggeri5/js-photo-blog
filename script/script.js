@@ -1,5 +1,8 @@
 const output = document.querySelector(".card-container");
+const outputOverlay = document.querySelector(".card-overlay");
+const overlay = document.getElementById("overlay");
 console.log(output);
+console.log(outputOverlay);
 
 
 // variabile endpoint dell'api
@@ -33,6 +36,22 @@ axios.get(endPointApi)
         // faccio l'output
         output.innerHTML = cards;
 
+
+        const allCards = document.querySelectorAll(".card");
+        console.log(allCards);
+
+        allCards.forEach(cardItem => {
+            cardItem.addEventListener("click", () => {
+
+                cardItem.querySelector(".foto-card")
+                console.log(cardItem.querySelector(".foto-card").src);
+
+                let imgSrc = cardItem.querySelector(".foto-card").src
+
+                document.querySelector(".card-overlay img").src = imgSrc
+
+            })
+        })
     });
 
 
